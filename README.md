@@ -2,7 +2,7 @@
 
 Schema aware, emmet-like expression shorthand for graphql queries
 
-# Separator
+# Separator `,`
 
 Usage
 
