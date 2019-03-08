@@ -1,6 +1,6 @@
 # xgql
 
-Schema aware emmet-like expression shorthand for graphql queries
+Schema aware, emmet-like expression shorthand for graphql queries
 
 # Separator
 
@@ -70,7 +70,7 @@ Usage:
       # it doesn't expand the other fields because they are nested types
     }
 
-## Fields (Not-nullable)
+## Fields (Not-nullable) `*!`
 
     query>*!
 
@@ -80,7 +80,7 @@ Usage:
       # nothing to show because no fields are non-nullable
     }
 
-### Unions
+### Unions `|`
 
     query>union>_typename,|First|Second
 
@@ -126,7 +126,7 @@ Usage:
     }
 
 
-### Nesting
+### Nesting `>*`
 
     query>*>*
 
@@ -160,7 +160,7 @@ Usage:
       }
     }
 
-#### Expand All
+#### Expand All `~`
 
     query>*~ # expands all without looping
 
@@ -168,7 +168,7 @@ Usage:
 
     query>*~1 # loops once
 
-## Arguments
+## Arguments `?;`
 
     query>hasArgs?string='abc',int=1; 
 
@@ -178,7 +178,7 @@ Usage:
       hasArgs(string: "abc", int: 1)
     }
 
-# Climb Up
+# Climb Up `+`
 
     query>test>id+longDescriptionType>id
 
