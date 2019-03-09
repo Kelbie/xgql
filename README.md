@@ -2,6 +2,8 @@
 
 Schema aware, emmet-like expression shorthand for graphql queries
 
+[View the reference implementation here](https://github.com/KevinKelbie/graphiql)
+
 # Separator `,`
 
 Usage
